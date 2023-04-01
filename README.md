@@ -1,18 +1,66 @@
-## Storyblok Next.js Multi-language Blog
+# The Storyblok Next Ultimate Tutorial
 
-This is the example repository for building a multi-language blog with Storyblok.
+In this tutorial series, you will learn how to build a headless website using Storyblok and Next.js. Starting with the fundamental integration of Storyblok in Next.js, more advanced functionalities are explained in bite-sized content pieces, such as dynamic page rendering, dynamic menus, custom components, multilingual content and more.
 
-Follow our [The Complete Guide to Build a Full Blown Multilanguage Website with Next.js](https://www.storyblok.com/tp/nextjs-headless-cms-ultimate-tutorial) tutorial to set it up
+You can switch between the different branches of this repository; there is one branch for each tutorial part. Alternatively, you may want to check out the live demos on StackBlitz. You can even replicate the corresponding Storyblok space for each of the tutorial parts in order to explore its exact configuration. 
 
-1. Clone the example space with this link: <https://app.storyblok.com/#!/build/95804>
-2. Enter your preview token in the `pages/_app.js` file
-3. Install dependencies and start the development server `npm install && npm run dev`
-4. Add your [https://localhost:3010](https://localhost:3010) as the **default location URL** in your Storyblok space settings
+## Tutorial Parts
 
-## Learn More
+### Part 1
+ - Tutorial: [Add a headless CMS to Next.js 3 in 5 minutes](https://www.storyblok.com/tp/add-a-headless-cms-to-next-js-in-5-minutes)
+ - Live demo: [Open in StackBlitz](https://stackblitz.com/edit/nextjs-5-minutes)
+ - Branch: [part-1](https://github.com/storyblok/next.js-ultimate-tutorial/tree/part-1)
+ - Storyblok space: [Create your own copy](https://app.storyblok.com/#!/build/166651)
+ 
 
-To learn more about Next.js, take a look at the following resources:
+## Requirements
 
-- [Add a headless CMS to Next.js in 5 minutes](https://www.storyblok.com/tp/add-a-headless-cms-to-next-js-in-5-minutes) - Tutorial to get started with Next.js & Storyblok
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+To use this project you have to have a Storyblok account. If you don't have one yet you can register at [Storyblok](https://www.storyblok.com), it's free.
+
+## How to get started?
+
+### 1. Clone the repo
+
+```sh
+  $ git clone https://github.com/storyblok/next.js-ultimate-tutorial.git
+```
+
+### 2. Install all dependecies 
+```sh
+$  yarn # or npm install
+```
+
+### 3. Adding the Access token
+Create a new empty Space and exchange the preview token with your own in ```pages/_app.js```.
+
+```js
+// in pages/_app.js
+storyblokInit({
+  accessToken: "your-preview-token",
+  use: [apiPlugin],
+  components,
+});
+```
+
+### 4. Run your project
+Set the preview domain in <strong>Storyblok</strong> to `http://localhost:3000/`
+
+```sh
+# to run in developer mode
+$ yarn dev # or npm run dev
+```
+
+```sh
+# to build your project
+$ yarn build # or npm run build
+```
+
+
+
+## Resources
+
+- [Next.js docs](https://nextjs.org/docs/#setup)
+- [Storyblok Next.js Ultimate Tutorial](https://www.storyblok.com/tp/nextjs-headless-cms-ultimate-tutorial)
+
+
+  
