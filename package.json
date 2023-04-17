@@ -8,7 +8,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "pull-sb": "storyblok pull-components --space=215550",
+    "pull-sb-components": "storyblok pull-components --space=215550",
     "generate-sb-types": "storyblok-generate-ts source=./components.215550.json target=./component-types-sb"
   },
   "dependencies": {

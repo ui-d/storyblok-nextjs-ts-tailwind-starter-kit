@@ -58,8 +58,8 @@ $ yarn build # or npm run build
 
 ### 6. To generate TS types based on Storyblok components run:
 ```sh
-$ storyblok pull-components --space=[SPACE_ID]
-"generate-sb-types": "storyblok-generate-ts source=./components.[SPACE_ID].json target=./component-types-sb"
+$ npm run pull-sb-components
+$ npm run generate-sb-types
 ```
 Don't forget to replace [SPACE_ID] with your own space id and make sure storyblok is installed (npm i storyblok -g)
 
