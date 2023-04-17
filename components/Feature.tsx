@@ -2,7 +2,7 @@ import { storyblokEditable } from "@storyblok/react";
 import { FeatureStoryblok } from "../component-types-sb";
 
 const Feature = ({ blok }: FeatureStoryblok) => (
-  <div className="column feature" {...storyblokEditable(blok)}>
+  <div className="text-blue-200" {...storyblokEditable(blok)}>
     {blok.name}
   </div>
 );
