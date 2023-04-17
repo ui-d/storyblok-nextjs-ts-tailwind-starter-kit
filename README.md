@@ -31,10 +31,10 @@ $  yarn # or npm install
 ```
 
 ### 3. Adding the Access token
-Create a new empty Space and exchange the preview token with your own in ```pages/_app.js```.
+Create a new empty Space and exchange the preview token with your own in ```pages/_app.tsx```.
 
 ```js
-// in pages/_app.js
+// in pages/_app.tsx
 storyblokInit({
   accessToken: "your-preview-token",
   use: [apiPlugin],

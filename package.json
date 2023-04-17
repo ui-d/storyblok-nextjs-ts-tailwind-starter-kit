@@ -8,7 +8,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "generate-sb-types": "storyblok-generate-ts source=./components.[SPACE_ID].json target=./component-types-sb"
+    "pull-sb": "storyblok pull-components --space=215550",
+    "generate-sb-types": "storyblok-generate-ts source=./components.215550.json target=./component-types-sb"
   },
   "dependencies": {
     "@storyblok/react": "^1.0.3",
@@ -19,6 +20,7 @@
     "typescript": "^5.0.3"
   },
   "devDependencies": {
-    "@types/react": "^18.0.1"
+    "@types/react": "^18.0.1",
+    "storyblok-generate-ts": "^1.13.2"
   }
 }
