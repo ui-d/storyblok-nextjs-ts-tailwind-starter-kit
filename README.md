@@ -1,21 +1,6 @@
-# The Storyblok Next Ultimate Tutorial
+# Storyblok Typescript Next.js Tailwind Starter
 
-In this tutorial series, you will learn how to build a headless website using Storyblok and Next.js. Starting with the fundamental integration of Storyblok in Next.js, more advanced functionalities are explained in bite-sized content pieces, such as dynamic page rendering, dynamic menus, custom components, multilingual content and more.
-
-You can switch between the different branches of this repository; there is one branch for each tutorial part. Alternatively, you may want to check out the live demos on StackBlitz. You can even replicate the corresponding Storyblok space for each of the tutorial parts in order to explore its exact configuration. 
-
-## Tutorial Parts
-
-### Part 1
- - Tutorial: [Add a headless CMS to Next.js 3 in 5 minutes](https://www.storyblok.com/tp/add-a-headless-cms-to-next-js-in-5-minutes)
- - Live demo: [Open in StackBlitz](https://stackblitz.com/edit/nextjs-5-minutes)
- - Branch: [part-1](https://github.com/storyblok/next.js-ultimate-tutorial/tree/part-1)
- - Storyblok space: [Create your own copy](https://app.storyblok.com/#!/build/166651)
- 
-
-## Requirements
-
-To use this project you have to have a Storyblok account. If you don't have one yet you can register at [Storyblok](https://www.storyblok.com), it's free.
+This is a starter project for Next.js with Storyblok, Typescript and Tailwind CSS. It is based on the [Storyblok Next.js Ultimate Tutorial](https://www.storyblok.com/tp/nextjs-headless-cms-ultimate-tutorial) and uses the [Storyblok Generate TS](https://github.com/dohomi/storyblok-generate-ts)
 
 ## How to get started?
 
@@ -71,11 +56,20 @@ $ yarn build # or npm run build
 // https is now running on port 3010 and forwarding requests to http 3000
 ```
 
+### 6. To generate TS types based on Storyblok components run:
+```sh
+$ storyblok pull-components --space=[SPACE_ID]
+"generate-sb-types": "storyblok-generate-ts source=./components.[SPACE_ID].json target=./component-types-sb"
+```
+Don't forget to replace [SPACE_ID] with your own space id and make sure storyblok is installed (npm i storyblok -g)
+
+
 
 ## Resources
 
 - [Next.js docs](https://nextjs.org/docs/#setup)
 - [Storyblok Next.js Ultimate Tutorial](https://www.storyblok.com/tp/nextjs-headless-cms-ultimate-tutorial)
+- [Storyblok Generate TS](https://github.com/dohomi/storyblok-generate-ts)
 
 
   
